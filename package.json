@@ -2,7 +2,7 @@
   "name": "@f/require-content",
   "description": "Require content - rather than a file.",
   "repository": "git://github.com/micro-js/require-content.git",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
