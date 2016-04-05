@@ -28,3 +28,10 @@ test('errors should have correct stack', function (t) {
     t.end()
   }
 })
+
+test('should work for browserified code', function (t) {
+  var content = fs.readFileSync(path.join(__dirname, './fixtures/build.js'))
+  var foo = requireContent(content, path.join(__dirname, 'fixtures/foo.js'))
+  t.equal(foo(), 'foo')
+  t.end()
+})
